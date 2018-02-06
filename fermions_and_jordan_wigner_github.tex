@@ -411,7 +411,7 @@ follows:
   
 \item Suppose $\alpha_j = 1$.  Let $\alpha'$ be that vector which
   results when the $j$th entry of $\alpha$ is changed to $0$.  Then
-  $a_j|\alpha\rangle = -(-1)^{s_\alpha^j} |\alpha'\rangle$, where
+  $a_j|\alpha\rangle = (-1)^{s_\alpha^j} |\alpha'\rangle$, where
   $s_\alpha^j \equiv \sum_{k=1}^{j-1} \alpha_k$.
 \end{itemize}
 
@@ -419,7 +419,7 @@ The action of $a_j^\dagger$ on $W$ is similar:
 \begin{itemize}
 \item Suppose $\alpha_j = 0$.  Let $\alpha'$ be that vector which
   results when the $j$th entry of $\alpha$ is changed to $1$.  Then
-  $a_j^\dagger|\alpha\rangle = -(-1)^{s_\alpha^j}|\alpha'\rangle$,
+  $a_j^\dagger|\alpha\rangle = (-1)^{s_\alpha^j}|\alpha'\rangle$,
   where $s_\alpha^j \equiv \sum_{k=1}^{j-1} \alpha_k$.
 
 \item Suppose $\alpha_j = 1$.  Then $a_j^\dagger |\alpha\rangle = 0$.
@@ -914,14 +914,14 @@ follows:
   
 \item Suppose $\alpha_j = 1$.  Let $\alpha'$ be that vector which
   results when the $j$th entry of $\alpha$ is changed to $0$.  Then
-  $a_j|\alpha\rangle = -(-1)^{s_\alpha^j} |\alpha'\rangle$, where
+  $a_j|\alpha\rangle = (-1)^{s_\alpha^j} |\alpha'\rangle$, where
   $s_\alpha^j \equiv \sum_{k=1}^{j-1} \alpha_k$.
 \end{itemize}
 If we identify the occupation number state $|\alpha\rangle$ with the
 corresponding computational basis state $|\alpha\rangle$, then this
 suggests taking as our \emph{definition}
 \begin{eqnarray}
-  a_j \equiv -\left( \otimes_{k=1}^{j-1} Z_k \right) \otimes \sigma_j,
+  a_j \equiv \left( \otimes_{k=1}^{j-1} Z_k \right) \otimes \sigma_j,
 \end{eqnarray}
 where $\sigma_j$ is used to denote the matrix $\sigma \equiv |0\rangle
 \langle 1|$ acting on the $j$th qubit.  It is easily verified that
@@ -940,7 +940,7 @@ $a_1,\ldots,a_n$.  In particular, we have
 This observation may also be used to obtain an expression for $X_j$ by
 noting that $X_j = \sigma_j +\sigma_j^\dagger$, and thus:
 \begin{eqnarray}
-  X_j = -(Z_1 \ldots Z_{j-1}) (a_j+a_j^\dagger).
+  X_j = (Z_1 \ldots Z_{j-1}) (a_j+a_j^\dagger).
 \end{eqnarray}
 Substituting in the expressions for $Z_1,\ldots,Z_{j-1}$ in terms of
 the Fermionic operators gives the desired expression for $X_j$ in
